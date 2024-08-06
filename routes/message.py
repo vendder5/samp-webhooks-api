@@ -11,6 +11,9 @@ def send_webhook_message():
     webhook_username = data.get('webhook_username')
     message = data.get('message')
     
+    if not webhook_url:
+        return jsonify({"error": "webhook_url is required"}), 400
+
     webhook = DiscordWebhook(
         url=webhook_url,
         username=webhook_username,

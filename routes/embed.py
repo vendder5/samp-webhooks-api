@@ -10,6 +10,9 @@ def send_webhook_embed():
     webhook_url = data.get('webhook_url')
     webhook_username = data.get('webhook_username')
     embed_data = data.get('embed')
+
+    if not webhook_url:
+        return jsonify({"error": "webhook_url is required"}), 400
     
     if not embed_data or not all(key in embed_data for key in ('title', 'description', 'color')):
         return {'error': 'Invalid embed data. Required keys: title, description, color.'}, 400
