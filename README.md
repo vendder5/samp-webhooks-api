@@ -66,4 +66,4 @@ public OnGameModeInit()
 	return 1;
 }
 ```
-![example](https://cdn.discordapp.com/attachments/1261132422448156673/1264619571571331093/image.png?ex=669e8841&is=669d36c1&hm=17def04e5de25ea1f241740c81298d2faeb3860af3c69ee31cde80783a3d649c&)
+![example](https://cdn.discordapp.com/attachments/1259707494897549452/1270500832676286504/image.png?ex=66b3ed9b&is=66b29c1b&hm=7c1bc0d6fc96a7588292d223f046bc9001a838af1799215b6e8994a686f9d836&)
