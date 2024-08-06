@@ -49,8 +49,8 @@ a simple api, which allows to send webhooks to a specific discord channel, throu
 # Functions
 ```pawn
 // Webhooks
-SendDiscordWebhookMessage(const message[], const webhook_username[] = "samp-webhooks");
-SendDiscordWebhookEmbed(const title[], const description[], const color[], const webhook_username[] = "samp-webhooks");
+Discord_SendWebhookMessage(const message[], const webhook_username[] = "samp-webhooks");
+Discord_SendWebhookEmbed(const title[], const description[], const color[], const webhook_username[] = "samp-webhooks");
 ```
 
 # Examples
@@ -62,8 +62,9 @@ main(){ return 0; }
 
 public OnGameModeInit()
 {
-	SendDiscordWebhookEmbed("Server was started", "the server has been successfully started", .webhook_username = "test webhook");
+	Discord_SendWebhookEmbed("Server was started", "the server has been successfully started", .webhook_username = "test webhook");
 	return 1;
 }
 ```
+
 ![example](https://cdn.discordapp.com/attachments/1259707494897549452/1270500832676286504/image.png?ex=66b3ed9b&is=66b29c1b&hm=7c1bc0d6fc96a7588292d223f046bc9001a838af1799215b6e8994a686f9d836&)

@@ -7,6 +7,6 @@ main(){ return 0; }
 
 public OnGameModeInit()
 {
-	SendDiscordWebhookEmbed("Server was started", "the server has been successfully started", .webhook_username = "test webhook");
+	Discord_SendWebhookEmbed("Server was started", "the server has been successfully started", .webhook_username = "test webhook");
 	return 1;
 }
