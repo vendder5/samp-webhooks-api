@@ -1,9 +1,9 @@
 from flask import Blueprint, jsonify, request
 from discord_webhook import DiscordWebhook, DiscordEmbed
 
-bp = Blueprint('embed', __name__, url_prefix='/api/webhook')
+embed_bp = Blueprint('embed', __name__, url_prefix='/api/webhook')
 
-@bp.route('/send_embed', methods = ['GET', 'POST'])
+@embed_bp.route('/send_embed', methods = ['GET', 'POST'])
 def send_webhook_embed():
     data = request.get_json(force=True) # "force = true" it sucks, but it forces flask to parse the json without having the Content-Type
 

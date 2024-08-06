@@ -1,10 +1,11 @@
 from flask import Flask
-from routes import embed, message
+from routes.embed import embed_bp
+from routes.message import message_bp
 
 app = Flask(__name__)
 
-app.register_blueprint(embed.bp)
-app.register_blueprint(message.bp)
+app.register_blueprint(embed_bp)
+app.register_blueprint(message_bp)
 
 if __name__ == '__main__':
     app.run(debug=True)

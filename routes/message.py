@@ -1,9 +1,9 @@
 from flask import Blueprint, jsonify, request
 from discord_webhook import DiscordWebhook
 
-bp = Blueprint('message', __name__, url_prefix='/api/webhook')
+message_bp = Blueprint('message', __name__, url_prefix='/api/webhook')
 
-@bp.route('/send_message', methods = ['GET', 'POST'])
+@message_bp.route('/send_message', methods = ['GET', 'POST'])
 def send_webhook_message():
     data = request.get_json(force=True) # "force = true" it sucks, but it forces flask to parse the json without having the Content-Type
 
