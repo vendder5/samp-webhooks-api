@@ -6,11 +6,11 @@ a simple api, which allows to send webhooks to a specific discord channel, throu
 
 1. Clone repository
 
-   ```git clone https://github.com/vendder5/samp-discord-api.git```
+   ```git clone https://github.com/vendder5/samp-webhooks-api.git```
 
 2. Navigate to the repository directory
 
-   ```cd samp-discord-api```
+   ```cd samp-webhooks-api```
 
 3. Create a virtual env
 
