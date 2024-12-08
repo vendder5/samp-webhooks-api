@@ -10,7 +10,7 @@ a simple api, which allows to send webhooks to a specific discord channel, throu
 
 2. Navigate to the repository directory
 
-   ```cd samp-discord-api```
+   ```cd samp-webhooks-api```
 
 3. Create a virtual env
 
